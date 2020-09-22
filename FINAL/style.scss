@@ -1,0 +1,180 @@
+$dark_blue: #2E323F;
+$blue: #3B4050;
+$grey: #6F737F;
+$white: #FFFFFF;
+$baige: #A59678;
+
+$bold-font: 'Oswald', sans-serif;
+$regular-font: 'Montserrat', sans-serif;
+
+
+
+
+*, *::after, *::before{
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+header {
+    padding: 1em;
+    background-color: $dark_blue;
+    align-items: center;
+}
+footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.white-text {
+    color: $white;
+}
+
+.baige-text {
+    color: $baige;
+}
+
+.hero {
+    background-color: $blue;
+    flex-direction: column;
+    padding: 1em 0;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 3rem;
+    font-family: $bold-font;
+    font-weight: 900;
+}
+.right-text {
+    font-family: $regular-font;
+    font-size: 1.5rem;
+    margin: 1em;
+    flex-direction: column;
+    
+    a{
+        margin-top: 2em;
+    }
+}
+.btn {
+    font-family: $bold-font;
+    background-color: $baige;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 100px;
+    padding: .2em .85em;
+    text-align: center;
+}
+
+.first__section {
+    background-color: #f1f1f1;
+    padding: 1em;
+}
+.second__section {
+    background-color: $white;
+    padding: 1em;
+    flex-direction: column;
+}
+footer {
+    background-color: $blue;
+    padding: 1em;
+
+}
+
+
+
+
+.nav__link {
+    display: none;
+    list-style: none;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+}
+
+.first__section--title {
+    color: $baige;
+    text-align: center;
+    padding-top: 2em;
+    font-family: $bold-font;
+}
+.first__section--text {
+    font-family: $regular-font;
+    text-align: center;
+}
+.tile {
+    background-color: $dark_blue;
+    text-align: center;
+    color: white;
+   
+
+    h1 {
+        font-family: $bold-font;
+        font-weight: 900;
+        font-size: 2em;
+        padding: 1em 1em 0 1em;
+    }
+    p {
+        font-family: $regular-font;
+        font-size: 1em;
+        font-weight: 400;
+        padding: 1em;
+
+    }
+}
+
+@media (min-width: 700px) {
+    .nav__link {
+        display: flex;
+        padding-left: 2em;
+        justify-content: flex-end;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .left {
+        width: 40%;
+    }
+    .right {
+        width: 55%;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+}

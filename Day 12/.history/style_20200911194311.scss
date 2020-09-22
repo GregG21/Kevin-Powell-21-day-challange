@@ -1,0 +1,25 @@
+// font-family: 'Playfair Display', serif;
+
+// font-family: 'Roboto', sans-serif;
+
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 1128px;
+}
+
+.display-flex {
+    display: flex;
+}
